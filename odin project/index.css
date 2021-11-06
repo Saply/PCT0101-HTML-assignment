@@ -1,0 +1,122 @@
+* { /* <-- selector */
+
+    background-color: rgb(201, 26, 201);  
+    /* property             value */
+}
+/* Selectors simply refer to the HTML elements to which CSS rules apply; they’re what is actually being “selected” for each rule.
+   The following subsections don’t cover every selector available, but they’re by far the most common and the ones you should get 
+   comfortable using first.
+*/
+
+/* Type Selectors
+A type selector (or element selector) will select all elements of the given element type, and the syntax is just the name of the element:*/
+
+h2 {
+    color: white;
+  }
+
+/* Class Selectors
+Class selectors will select all elements with the given class, which is just an attribute you place on an HTML element. Here’s how you add a
+class to an HTML tag and select it in CSS:
+<h1 class = "cool-class"> ... </h1> */
+
+.cool-class {
+    color: red;
+}
+
+/* Note the syntax for class selectors: a period immediately followed by the case-sensitive value of the class attribute. 
+   Classes aren’t required to be unique, so you can use the same class on as many elements as you want.
+
+Another thing you can do with the class attribute is add multiple classes to a single element as a space-separated list, 
+such as class="alert-text severe-alert". Since whitespace is used to separate class names like this, you should never use
+spaces for multi-worded names and should use a hyphen instead. */
+
+/* ID Selectors
+ID selectors are similar to class selectors. They select an element with the given ID, which is another attribute you place on an HTML element: 
+<h3 id = "title">...</h3>
+*/
+
+#title {
+    background-color: yellow;
+}
+
+/* Instead of a period, we use a hashtag immediately followed by the case-sensitive value of the ID attribute. 
+   A common pitfall is people overusing the ID attribute when they don’t necessarily need to, and when classes will suffice. 
+   While there are cases where using an ID makes sense or is needed, such as taking advantage of specificity or to have links 
+   redirect to a section on the current page, you should use IDs sparingly (if at all).
+
+   The major difference between classes and IDs is that an element can only have one ID. An ID cannot be repeated on a single page,
+   and the ID attribute should not contain any whitespace at all.
+*/
+
+/* Grouping Selector
+What if we have two groups of elements that share some of their style declarations?
+.read {
+  color: white;
+  background-color: black;
+  (several unique declarations)
+}
+
+.unread {
+  color: white;
+  background-color: black;
+  (several unique declarations)
+}
+
+Both our .read and .unread selectors share the color: white; and background-color: black; declarations, but otherwise have several of 
+their own unique declarations. To cut down on the repetition, we can group these two selectors together as a comma-separated list:
+As such:
+
+.read, 
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.read {
+  (several unique declarations)
+}
+
+.unread {
+   (several unique declarations)
+}
+*/
+
+
+/* https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/css-foundations */
+
+img {
+    height: auto;
+    width: 600px;
+    /* It’s best to include both of these properties for <img> elements, even if you don’t plan on adjusting the values from the image file’s original ones. When these values aren’t included, if an image takes longer to load than the rest of the page contents, the image won’t take up any space on the page at first, but will suddenly cause a drastic shift of the other page contents once it does load in. Explicitly stating a height and width prevents this from happening, as space will be “reserved” on the page and will just appear as a blank space until the image loads. */
+}
+
+#next-page:link {
+    color:steelblue;
+}
+
+
+#next-page:visited {
+    color:rgb(5, 230, 54);
+}
+
+h3:hover {
+    color:rgb(98, 0, 255);
+}
+
+/* 
+The MDN box model article linked in the previous lesson mentions that different display types have subtly different box models, 
+and that you can change how a box is calculated by changing the display property.
+
+Most of the elements that you have learned about so far are block elements. In other words, their default style is display: block. 
+By default, block elements will appear on the page stacked atop each other, each new element starting on a new line.
+
+Inline elements, however, do not start on a new line. They appear in line with whatever elements they are placed beside. A clear 
+example of an inline element is a link, or <a> tag. If you stick one of these in the middle of a paragraph of text, it will behave 
+like a part of the paragraph. (Like this…) The link’s text will sit alongside other words in that paragraph. Additionally, padding 
+and margin behave differently on inline elements. In general, you do not want to try to put extra padding or margin on inline elements.
+
+Inline-block elements behave like inline elements, but with block-style padding and margin. Inline-block is a useful tool to know about,
+but in practice you’ll probably end up reaching for flexbox more often if you’re trying to line up a bunch of boxes. Flexbox will be covered 
+in depth in the next lesson. 
+*/

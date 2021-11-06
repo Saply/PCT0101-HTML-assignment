@@ -1,0 +1,112 @@
+/* simple css reset */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/* header stuff oooo spooky */
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #1F2937;
+    display: block;
+}
+
+.header-spacing {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* https://www.youtube.com/watch?v=GxwHXxumdQk */
+
+.header-logo {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.header-logo h1 {
+    color: wheat;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 50px;
+}
+
+.header-logo span {
+    font-weight: 100000;
+}
+
+.header-navigation {
+    float: right;
+    height: 100%;
+}
+
+
+.header-navigation a {
+    display: table;
+    float: left;
+    height: 100%;
+    padding: 0px 20px;
+}
+
+/* Setting padding for the final element in the navigation list */
+.header-navigation a:last-child {
+    padding-right: 5px;
+}
+
+/* For changing each element in the navigation */
+.header-navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+
+
+/* text underneath the header */
+.welcome-screen {
+    background-color: aquamarine;
+    height: 150px;
+}
+
+/* positions the welcome screen title */
+.welcome-screen-title {
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+
+
+
+#cat {
+    display: block;
+    max-height: 20%;
+    max-width: 20%;
+}
+
+#big-floppa {
+    height: 200px;
+    width: 200px;
+}
+@media screen and (max-width: 1000px) {
+    * {
+        font-size: 100;
+    }
+}
+
+
+
+
+
+
+
+

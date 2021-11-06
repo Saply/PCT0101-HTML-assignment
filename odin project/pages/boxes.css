@@ -1,0 +1,31 @@
+
+/* boxes https://www.youtube.com/watch?v=rIO5326FgPE */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 40px;
+}
+.box-one,
+.box-two {
+    display: flex;
+    background-color: rgb(0, 68, 255);
+    border: 20px solid rgb(255, 187, 0);
+}
+
+.box-one {
+    padding: 10px;
+    margin: 60px;
+    height: 80px;
+    flex: 1;
+}
+
+.box-two {
+    border: 4px solid rgb(80, 255, 138);
+
+}
+/* pseudoselector */
+h2:hover {
+    color: steelblue
+}
+
