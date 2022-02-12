@@ -1,0 +1,301 @@
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/*************************************************/
+/*              CSS RESET                        */
+/*************************************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', arial;
+}
+
+body {
+    background-color: rgb(204, 203, 182);;
+}
+
+/*************************************************/
+/*              HEADER BAR                       */
+/*************************************************/
+
+header, li, a {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2937;
+    padding: 30px 10%;
+}
+
+.header-logo {
+    color: wheat;
+}
+
+.header-navigation a {
+    color: white;
+}
+
+.header-navigation li { 
+    list-style: none;
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+}
+
+.header-navigation li a {
+    transition: all 0.5s ease 0s;
+}
+
+.header-navigation li a:hover {
+    color: aqua;
+}
+
+.header-navigation span {
+    color: black;
+    background-color: rgb(55, 125, 216);
+    border-radius: 4px;
+    padding: 6px 12px 6px 12px;
+}
+
+
+/* ****************************************** */
+/*                 INFO                       */
+/* ****************************************** */
+
+.capybara-info {
+    display: flex;
+    flex-wrap: wrap;
+    color: #F9FAF8;
+    background-color: #537A5A;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.capybara-info-text {
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    justify-content: center;
+}
+
+.capybara-info-text p {
+    opacity: 0.7;
+    font-family: 'Roboto', arial;
+    font-size: 2.5vh;
+    text-align: justify;
+}
+
+.capybara-info-text h1 {
+    font-size: 4vh;
+    font-weight: bold;
+    color: #F9FAF8;
+    margin: 0;
+    font-family: 'Roboto', arial;
+}
+
+.capybara-info-text button {
+    width: 200px auto;
+    height: auto;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 8px;
+    background-color: #3a6842;
+    padding: 5px 25px;
+    font-size: 14px;
+    transition-duration: 0.4s;
+}
+
+.capybara-info-text button:hover {
+    background-color: #6aa173;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+.capybara-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .capybara-image img {
+        margin-top: 30px;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        border-radius: 50px;
+    }
+}
+
+/* ****************************************** */
+/*                 GALLERY                    */
+/* ****************************************** */
+
+.capybara-gallery {
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    background-color: #5f964f;
+    padding-bottom: 30px;
+}
+
+.capybara-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.capybara-images img {
+    width: 250px;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 23px;
+    border: 3px solid #37e27e;
+    margin: 5px 20px 0px 20px;
+}
+
+.capybara-images div {
+    margin: 10px;
+}
+
+.capybara-images img:hover {
+    border: 3px solid #70df9e;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/* ****************************************** */
+/*                 VIDEO                      */
+/* ****************************************** */
+
+.capybara-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    background-color: #79af69;
+}
+
+.capybara-video h2 {
+    font-size: 24px;
+    word-spacing: 3px;
+}
+
+.capybara-video p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.iframe-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 3em auto;
+}
+
+.iframe-wrapper p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vh;
+}
+
+.iframe-container {
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 720 / 1280 */
+    position: relative;
+}
+
+.iframe-container iframe, .iframe-container video {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ****************************************** */
+/*                 FOOTER                     */
+/* ****************************************** */
+footer {
+    height: auto;
+    width: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 40px;
+    background-color: #1F2937;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-container h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-container p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 2px;
+}
+
+.quick-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.quick-links li {
+    margin: 0 10px;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: rgb(26, 243, 207);
+}
+
+.quick-links a li {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+
+.quick-links a:hover i {
+    color: rgb(0, 0, 0);
+}
+
+.footer-bottom {
+    background: #000;
+    color: #fff;
+    width: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 20px;
+    word-spacing: 2px;
+}
